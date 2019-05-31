@@ -1,0 +1,22 @@
+#prism_wrapper {
+ display: block;
+ position: absolute;
+ top: 0; left: 0; bottom: 0; right: 0;
+ margin: 0px 0px 0px 0px;
+ font-family: Verdana;
+ font-size: 12pt;
+ text-rendering: optimizeLegibility;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ -moz-user-select: none;
+ -webkit-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ cursor: default;
+}
+
+#prism_wrapper > #pwr_ele_canvas {
+ display: block;
+ position: absolute;
+ top: 0; left: 0; bottom: 0; right: 0;
+}

@@ -1,0 +1,35 @@
+<html>
+<head>
+ <title>prism-wrapper</title>
+ <meta charset="UTF-8" />
+ <!-- google -->
+ <script src="https://apis.google.com/js/client.js"></script>
+ <!-- distrib -->
+ <script src="lib/distrib/fabric/fabric-2.4.6.min.js"></script>
+ <!-- core -->
+ <script type="module" src="lib/js/prism-wrapper.js"></script>
+ <!-- style -->
+ <link rel="stylesheet" href="lib/css/prism-wrapper.css" />
+</head>
+<body>
+ <div id="prism_wrapper">
+  <div id="pwr_ele_top_panel">
+   <form id="pwr_ele_input">
+    Peptide Sequence:<br />
+    <input type="text" name="sequence" id="pwr_ele_input_sequence" /><br />
+    Charge<br>
+    <input type="number" name="charge" min="1" max="7" id="pwr_ele_input_charge" /><br />
+    Fragmentation Type:<br />
+    <input type="radio" name="fragtype" value="HCD" checked id="pwr_ele_input_fragtype_hcd" />HCD
+    <input type="radio" name="fragtype" value="CID" id="pwr_ele_input_fragtype_cid" />CID<br />
+    Mass Analyser:<br />
+    <input type="radio" name="analyser" value="FTMS" checked id="pwr_ele_input_analyser_ftms" />HCD
+    <input type="radio" name="analyser" value="ITMS" id="pwr_ele_input_analyser_itms" />CID<br />
+    <input type="submit" name="submit" value="Submit" id="pwr_ele_input_submit" /><br />
+   </form>
+  </div>
+  <hr />
+  <canvas id="pwr_ele_canvas"></canvas>
+ </div>
+</body>
+</html>
